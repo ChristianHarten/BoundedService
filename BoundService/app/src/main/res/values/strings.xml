@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">BoundService</string>
     <string name="bind_service_button_text">Dienst binden</string>
+    <string name="unbind_service_button_text">Dienst lösen</string>
+    <string name="inc_counter_button_text">Zähler erhöhen</string>
+    <string name="reset_counter_button_text">Zähler zurücksetzen</string>
+    <string name="service_bound_message">Service IST gebunden</string>
+    <string name="service_unbound_message">Service ist NICHT gebunden</string>
+    <string name="no_op_possible_message">Nix geht</string>
 </resources>

@@ -10,8 +10,8 @@ import android.os.IBinder;
  */
 
 public class MyServiceConnection implements ServiceConnection {
-    private Activity activity;
-    public MyServiceConnection (Activity activity) {
+    private MainActivity activity;
+    public MyServiceConnection (MainActivity activity) {
         this.activity = activity;
     }
     @Override
