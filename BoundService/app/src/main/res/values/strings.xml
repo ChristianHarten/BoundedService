@@ -7,4 +7,5 @@
     <string name="service_bound_message">Service IST gebunden</string>
     <string name="service_unbound_message">Service ist NICHT gebunden</string>
     <string name="no_op_possible_message">Nix geht</string>
+    <string name="start_act_button_text">Starte zweite Activity</string>
 </resources>

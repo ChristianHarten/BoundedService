@@ -1,6 +1,5 @@
 package de.hochschule_trier.boundservice;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.ServiceConnection;
 import android.os.IBinder;
@@ -11,13 +10,22 @@ import android.os.IBinder;
 
 public class MyServiceConnection implements ServiceConnection {
     private MainActivity activity;
+    private SecondActivity secondActivity;
     public MyServiceConnection (MainActivity activity) {
         this.activity = activity;
+    }
+    public MyServiceConnection (SecondActivity activity) {
+        this.secondActivity = activity;
     }
     @Override
     public void onServiceConnected(ComponentName name, IBinder service) {
         CounterImpl counter = (CounterImpl) service;
-        activity.setCounter(counter);
+        if (secondActivity == null) {
+            activity.setCounter(counter);
+        }
+        if (activity == null) {
+            secondActivity.setCounter(counter);
+        }
     }
 
     @Override

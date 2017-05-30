@@ -8,13 +8,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
     private CounterImpl mCounter;
     private MyServiceConnection mServiceConnection;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
     }
     @Override
     protected void onDestroy() {
@@ -53,9 +53,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void handleReset(View v) {
         handle(2);
-    }
-    public void startSecondActivity(View v) {
-        startActivity(new Intent(this, SecondActivity.class));
     }
     private void handle(int command) {
         TextView counterOutput = (TextView) findViewById(R.id.counterOutput);

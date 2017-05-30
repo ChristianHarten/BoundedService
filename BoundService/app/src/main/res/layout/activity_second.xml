@@ -34,10 +34,5 @@
     <TextView
         android:id="@+id/counterOutput"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:text="@string/start_act_button_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="startSecondActivity"/>
+        android:layout_height="match_parent" />
 </LinearLayout>
