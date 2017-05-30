@@ -33,11 +33,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void handleBindService(View v) {
-        if (mServiceConnection == null) {
+        /* if (mServiceConnection == null) {
             Intent intent = new Intent(this, BoundService.class);
             mServiceConnection = new MyServiceConnection(this);
             bindService(intent, mServiceConnection, Context.BIND_AUTO_CREATE);
-        }
+        } */
+        Intent intent = new Intent(this, BoundService.class);
+        mServiceConnection = new MyServiceConnection(this);
+        bindService(intent, mServiceConnection, Context.BIND_AUTO_CREATE);
     }
     public void handleUnbindService(View v) {
         if (mServiceConnection != null) {
