@@ -4,10 +4,6 @@ import android.content.ComponentName;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
-/**
- * Created by eschs on 30.05.2017.
- */
-
 public class MyServiceConnection implements ServiceConnection {
     private MainActivity activity;
     private SecondActivity secondActivity;
