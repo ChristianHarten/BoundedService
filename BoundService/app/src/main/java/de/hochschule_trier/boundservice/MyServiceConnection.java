@@ -5,6 +5,8 @@ import android.content.ServiceConnection;
 import android.os.IBinder;
 
 public class MyServiceConnection implements ServiceConnection {
+    // lieber interface benutzen, anstelle von zwei klassen
+    // zb IMyServiceConnection
     private MainActivity activity;
     private SecondActivity secondActivity;
     public MyServiceConnection (MainActivity activity) {
